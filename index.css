@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*  HEADER */
+header {
+  background-color: rgb(68, 160, 96);
+  padding: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MAIN */
+main {
+  color: rgb(37, 47, 185);
+  background-color: rgb(189, 161, 36, 0.781);
+  display: grid;
+  grid-template-columns: 1fr;   
+  gap: 120px;
+  padding: 30px;
+  padding-bottom: 300px;
+}
+
+/* БЛОКИ */
+.block {
+  width: 100%;                  
+  min-height: 250px;
+  padding: 20px;
+  border: 3px solid rgb(54, 49, 47);
+  scroll-margin-top: 100px;
+}
+
+.block h1 {
+  margin-bottom: 1.5rem;
+}
+
+
+/* КАРТОЧКИ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  border: 2px solid #0f0;
+  padding: 1rem;
+  min-height: 180px;
+  background: #c46a25;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  border: 2px solid #0f0;
+}
+.photo:hover {
+  transform: scale(1.28);
+}
+
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: rgb(37, 47, 185);
+}
+
+.text p {
+  font-size: 0.9rem;
+  color: #0f0;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* КРУГИ */
+.circles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.circle-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid #0f0;
+  padding: 1.5rem 1rem;
+  background: #c46a25;
+;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #0f0;
+  transition: transform 0.3s;
+}
+
+.circle:hover {
+  transform: scale(1.28);
+}
+
+.circle-box p {
+  font-size: 0.95rem;
+  color: #0f0;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  color: rgb(245, 150, 42);
+  background-color: rgb(148, 43, 25);
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+footer p {
+  color:#0f0;
+  text-align: left;
+  padding: 3px;
+}
